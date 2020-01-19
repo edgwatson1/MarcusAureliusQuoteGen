@@ -6,6 +6,9 @@ body {
   padding: 15% 20% 20% 20%;
 }
 
+
+
+
 p {
   font-family: "Cinzel Decorative", cursive;
   font-size: 1.5em;
@@ -80,3 +83,14 @@ a:hover {
   background-color: #ffffcc;
   opacity: 1;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5%;
+  }
+
+  p {
+  font-size: 0.9em;
+}
+
+
