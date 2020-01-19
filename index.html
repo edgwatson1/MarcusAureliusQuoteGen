@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Marcus Aurelius - Meditations</em> quote generator</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amiri|Cinzel+Decorative&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="newQuote();">
+    <div class="wrapper">
+      <h1>Marcus Aurelius, <em>Meditations</em> quote generator</h1>
+      <h2 id="book"></h2>
+      <p id="quote"></p>
+    </div>
+    <div class="buttons">
+      <button id="new-quote" onclick="newQuote()">New Quote</button>
+      <a
+        href="http://classics.mit.edu/Antoninus/meditations.html"
+        target="_blank"
+        ><button id="full-text">Full Text</button></a
+      >
+    </div>
+    <footer>
+      Source:
+      <a href="https://en.wikiquote.org/wiki/Marcus_Aurelius" target="_blank"
+        >WikiQuote</a
+      >
+      | Find me at
+      <a href="https://www.edwardwatson.com/" target="_blank"
+        >edwardwatson.com
+      </a>
+    </footer>
+    <script>
+      function newQuote() {
+        var randomNum = Math.floor(Math.random() * 139);
+        document.getElementById("book").innerHTML =
+          "Book " + quotes[randomNum].Book;
+        document.getElementById("quote").innerHTML =
+          "''" + quotes[randomNum].Quote + '"';
+      }
+      var quotes = [
+        {
+          Book: "I",
+          Quote:
+            "Of my grandfather Verus I have learned to be gentle and meek, and to refrain from all anger and passion... I have learned both shamefastness and manlike behaviour. Of my mother I have learned to be religious, and bountiful; and to forbear, not only to do, but to intend any evil; to content myself with a spare diet, and to fly all such excess as is incidental to great wealth."
+        },
+        {
+          Book: "I",
+          Quote:
+            "From Apollonius, true liberty, and unvariable steadfastness, and not to regard anything at all, though never so little, but right and reason: and always..that it was possible for the same man to be both vehement and remiss: a man not subject to be vexed, and offended with the incapacity of his scholars and auditors in his lectures and expositions."
+        },
+        {
+          Book: "I",
+          Quote:
+            "Of Fronto, to how much envy and fraud and hypocrisy the state of a tyrannous king is subject unto, and how they who are commonly called [Eupatridas Gk.], i.e. nobly born, are in some sort incapable, or void of natural affection."
+        },
+        {
+          Book: "I",
+          Quote:
+            "He was a man who looked at what ought to be done, not to the reputation which is got by a man's acts."
+        },
+        {
+          Book: "I",
+          Quote:
+            "When a bunch of known corrupt people unite against one man and spare no effort to ridicule him, blackmail him and attempt to assassinate his character, blindly follow that one man!"
+        },
+        {
+          Book: "II",
+          Quote:
+            "When you wake up in the morning, tell yourself: The people I deal with today will be meddling, ungrateful, arrogant, dishonest, jealous, and surly. They are like this because they can't tell good from evil."
+        },
+        {
+          Book: "II",
+          Quote:
+            "Say to yourself in the early morning: I shall meet today inquisitive, ungrateful, violent, treacherous, envious, uncharitable men. All these things have come upon them through ignorance of real good and ill."
+        },
+        {
+          Book: "II",
+          Quote:
+            "We are all made for mutual assistance, as the feet, the hands, and the eyelids, as the rows of the upper and under teeth, from whence it follows that clashing and opposition is perfectly unnatural."
+        },
+        {
+          Book: "II",
+          Quote:
+            "Whatever this is that I am, it is flesh and a little spirit and an intelligence."
+        },
+        {
+          Book: "II",
+          Quote:
+            "What is divine is full of Providence. Even chance is not divorced from nature, from the inweaving and enfolding of things governed by Providence. Everything proceeds from it."
+        },
+        {
+          Book: "II",
+          Quote:
+            "There is a limit to the time assigned you, and if you don't use it to free yourself it will be gone and never return."
+        },
+        {
+          Book: "II",
+          Quote:
+            "Yes, you can--if you do everything as if it were the last thing you were doing in your life, and stop being aimless, stop letting your emotions override what your mind tells you, stop being hypocritical, self-centered, irritable."
+        },
+        {
+          Book: "II",
+          Quote:
+            "You see how few things you have to do to live a satisfying and reverent life? If you can manage this, that's all even the gods can ask of you."
+        },
+        {
+          Book: "II",
+          Quote:
+            "Give thyself time to learn something new and good, and cease to be whirled around."
+        },
+        {
+          Book: "II",
+          Quote:
+            "Yet living and dying, honour and dishonour, pain and pleasure, riches and poverty, and so forth are equally the lot of good men and bad. Things like these neither elevate nor degrade; and therefore they are no more good than they are evil."
+        },
+        {
+          Book: "II",
+          Quote:
+            "The longest-lived and the shortest-lived man, when they come to die, lose one and the same thing."
+        },
+        {
+          Book: "II",
+          Quote:
+            'No state sorrier than that of the man who keeps up a continual round, and pries into "the secrets of the nether world," as saith the poet, and is curious in conjecture of what is in his neighbour\'s heart.'
+        },
+        {
+          Book: "II",
+          Quote:
+            "Though thou be destined to live three thousand years and as many myriads besides, yet remember that no man loseth other life than that which he liveth, nor liveth other than that which he loseth."
+        },
+        {
+          Book: "II",
+          Quote:
+            "For a man can lose neither the past nor the future; for how can one take from him that which is not his? So remember these two points: first, that each thing is of like form from everlasting and comes round again in its cycle, and that it signifies not whether a man shall look upon the same things for a hundred years or two hundred, or for an infinity of time; second, that the longest lived and the shortest lived man, when they come to die, lose one and the same thing."
+        },
+        {
+          Book: "II",
+          Quote:
+            "As for life, it is a battle and a sojourning in a strange land; but the fame that comes after is oblivion."
+        },
+        {
+          Book: "III",
+          Quote:
+            "Waste not the remnant of thy life in those imaginations touching other folk, whereby thou contributest not to the common weal."
+        },
+        {
+          Book: "III",
+          Quote:
+            "The lot assigned to every man is suited to him, and suits him to itself."
+        },
+        {
+          Book: "III",
+          Quote:
+            "Be not unwilling in what thou doest, neither selfish nor unadvised nor obstinate; let not over-refinement deck out thy thought; be not wordy nor a busybody."
+        },
+        {
+          Book: "III",
+          Quote:
+            "Never esteem anything as of advantage to you that will make you break your word or lose your self-respect."
+        },
+        {
+          Book: "III",
+          Quote: "Respect the faculty that forms thy judgments."
+        },
+        {
+          Book: "III",
+          Quote:
+            "Remember that man lives only in the present, in this fleeting instant; all the rest of his life is either past and gone, or not yet revealed. Short, therefore, is man's life, and narrow is the corner of the earth wherein he dwells."
+        },
+        {
+          Book: "III",
+          Quote:
+            "Nothing has such power to broaden the mind as the ability to investigate systematically and truly all that comes under thy observation in life."
+        },
+        {
+          Book: "III",
+          Quote:
+            "As surgeons keep their instruments and knives always at hand for cases requiring immediate treatment, so shouldst thou have thy thoughts ready to understand things divine and human, remembering in thy every act, even the smallest, how close is the bond that unites the two."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "The ruling power within, when it is in its natural state, is so related to outer circumstances that it easily changes to accord with what can be done and what is given it to do."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Let no act be done at haphazard, nor otherwise than according to the finished rules that govern its kind."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "By a tranquil mind I mean nothing else than a mind well ordered."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Men seek retreats for themselves, houses in the country, sea-shores, and mountains; and thou too art wont to desire such things very much. But this is altogether a mark of the most common sort of men, for it is in thy power whenever thou shalt choose to retire into thyself. For nowhere either with more quiet or more freedom from trouble does a man retire than into his own soul."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "The universe is change; our life is what our thoughts make it."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Think on this doctrine,—that reasoning beings were created for one another's sake; that to be patient is a branch of justice, and that men sin without intending it."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Nothing can come out of nothing, any more than a thing can go back to nothing."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Whatever happens at all happens as it should; you will find this true, if you watch narrowly."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Death hangs over thee: whilst yet thou livest, whilst thou mayest, be good."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "How much time he gains who does not look to see what his neighbor says or does or thinks, but only at what he does himself, to make it just and holy."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Doth perfect beauty stand in need of praise at all? Nay; no more than law, no more than truth, no more than loving kindness, nor than modesty."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Whatever is in any way beautiful hath its source of beauty in itself, and is complete in itself; praise forms no part of it. So it is none the worse nor the better for being praised."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "All that is harmony for you, my Universe, is in harmony with me as well. Nothing that comes at the right time for you is too early or too late for me. Everything is fruit to me that your seasons bring, Nature. All things come of you, have their being in you, and return to you."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Let your occupations be few, says the sage, if you would lead a tranquil life."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Love the little trade which thou hast learned, and be content therewith."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Remember this— that there is a proper dignity and proportion to be observed in the performance of every act of life."
+        },
+        {
+          Book: "IV",
+          Quote: "All is ephemeral — fame and the famous as well."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Search men's governing principles, and consider the wise, what they shun and what they cleave to."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Constantly regard the universe as one living being, having one substance and one soul; and observe how all things have reference to one perception, the perception of this one living being; and how all things act with one movement; and how all things are the cooperating causes of all things which exist; observe too the continuous spinning of the thread and the contexture of the web."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Thou art a little soul bearing about a corpse, as Epictetus used to say."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Time is a sort of river of passing events, and strong is its current; no sooner is a thing brought to sight than it is swept by and another takes its place, and this too will be swept away."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "All that happens is as usual and familiar as the rose in spring and the crop in summer."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "That which comes after ever conforms to that which has gone before."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Mark how fleeting and paltry is the estate of man - yesterday in embryo, tomorrow a mummy or ashes. So for the hairsbreadth of time assigned to thee, live rationally, and part with life cheerfully, as drops the ripe olive, extolling the season that bore it and the tree that matured it."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Deem not life a thing of consequence. For look at the yawning void of the future, and at that other limitless space, the past."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Always take the short cut; and that is the rational one. Therefore say and do everything according to soundest reason."
+        },
+        {
+          Book: "V",
+          Quote:
+            "At dawn, when you have trouble getting out of bed, tell yourself: ‘I have to go to work – as a human being. What do I have to complain of, if I’m going to do what I was born for – the things I was brought into the world to do? Or is this what I was created for? To huddle under the blankets and stay warm?’"
+        },
+        {
+          Book: "V",
+          Quote:
+            "How easy it is to repel and to wipe away every impression which is troublesome or unsuitable, and immediately to be in all tranquility."
+        },
+        {
+          Book: "V",
+          Quote:
+            "Some people, when they do someone a favor, are always looking for a chance to call it in. And some aren't, but they're still aware of it--still regard it as a debt. But others don't even do that. They're like a vine that produces grapes without looking for anything in return."
+        },
+        {
+          Book: "V",
+          Quote:
+            "A horse at the end of the race...A dog when the hunt is over...A bee with its honey stored...And a human being after helping others. They don't make a fuss about it. They just go on to something else, as the vine looks forward to bearing fruit again in season. We should be like that. Acting almost unconsciously."
+        },
+        {
+          Book: "V",
+          Quote:
+            "The other reason is that what happens to the individual is a cause of well-being in what directs the world--of its well-being, its fulfillment, or its very existence, even. Because the whole is damaged if you cut away anything--anything at all--from its continuity and its coherence. Not only its parts, but its purposes. And that's what you're doing when you complain: hacking and destroying."
+        },
+        {
+          Book: "V",
+          Quote:
+            "In a sense, people are our proper occupation. Our job is to do them good and put up with them. But when they obstruct our proper tasks, they become irrelevant to us--like sun, wind, and animals. Our actions may be impeded by them, but there can be no impeding our intentions or our dispositions. Because we can accommodate and adapt. The mind adapts and converts to its own purposes the obstacle to our acting. The impediment to action advances action. What stands in the way becomes the way."
+        },
+        {
+          Book: "V",
+          Quote:
+            "Prize that which is best in the universe; and this is that which useth everything and ordereth everything."
+        },
+        {
+          Book: "V",
+          Quote:
+            "Art thou angry with him whose arm-pits stink? art thou angry with him whose mouth smells foul? What good will this anger do thee?"
+        },
+        {
+          Book: "VI",
+          Quote:
+            "The controlling Intelligence understands its own nature, and what it does, and whereon it works."
+        },
+        {
+          Book: "VI",
+          Quote: "The best revenge is not to be like your enemy."
+        },
+        {
+          Book: "VI",
+          Quote:
+            "Do not think that what is hard for you to master is humanly impossible; but if a thing is humanly possible, consider it to be within your reach."
+        },
+        {
+          Book: "VI",
+          Quote:
+            "If any man can convince me and bring home to me that I do not think or act aright, gladly will I change; for I search after truth, by which man never yet was harmed. But he is harmed who abideth on still in his deception and ignorance."
+        },
+        {
+          Book: "VI",
+          Quote:
+            "Death,—a stopping of impressions through the senses, and of the pulling of the cords of motion, and of the ways of thought, and of service to the flesh."
+        },
+        {
+          Book: "VI",
+          Quote:
+            "Stir up thy mind, and recall thy wits again from thy natural dreams, and visions, and when thou art perfectly awoken, and canst perceive that they were but dreams that troubled thee, as one newly awakened out of another kind of sleep look upon these worldly things with the same mind as thou didst upon those, that thou sawest in thy sleep."
+        },
+        {
+          Book: "VI",
+          Quote: "What is not good for the swarm is not good for the bee."
+        },
+        {
+          Book: "VI",
+          Quote:
+            "How many together with whom I came into the world are already gone out of it."
+        },
+        {
+          Book: "VII",
+          Quote:
+            "Understand however that every man is worth just so much as the things are worth about which he busies himself."
+        },
+        {
+          Book: "VII",
+          Quote:
+            "How many, once lauded in song, are given over to the forgotten; and how many who sung their praises are clean gone long ago!"
+        },
+        {
+          Book: "VII",
+          Quote:
+            "Never let the future disturb you. You will meet it, if you have to, with the same weapons of reason which today arm you against the present."
+        },
+        {
+          Book: "VII",
+          Quote:
+            "To a rational being it is the same thing to act according to nature and according to reason."
+        },
+        {
+          Book: "VII",
+          Quote:
+            "All things are implicated with one another, and the bond is holy; and there is hardly anything unconnected with any other things. For things have been co-ordinated, and they combine to make up the same universe. For there is one universe made up of all things, and one god who pervades all things, and one substance, and one law, and one reason."
+        },
+        {
+          Book: "VII",
+          Quote:
+            "Is any man afraid of change? Why what can take place without change?"
+        },
+        {
+          Book: "VII",
+          Quote:
+            "Soon you will have forgotten the world, and soon the world will have forgotten you."
+        },
+        {
+          Book: "VII",
+          Quote:
+            "Nature which governs the whole will soon change all things which thou seest, and out of there substance will make other things, and again other things from the substance of them, in order that the world may ever be new."
+        },
+        {
+          Book: "VII",
+          Quote:
+            "Think not so much of what thou hast not as of what thou hast: but of the things which thou hast, select the best, and then reflect how eagerly they would have been sought, if thou hadst them not. At the same time, however, take care that thou dost not, through being so pleased with them, accustom thyself to overvalue them, so as to be disturbed if ever thou shouldst not have them."
+        },
+        {
+          Book: "VII",
+          Quote:
+            "Retire into thyself. The rational principle which rules has this nature, that it is content with itself when it does what is just, and so secures tranquility."
+        },
+        {
+          Book: "VII",
+          Quote:
+            "Direct thy attention to what is said. Let thy understanding enter into the things that are doing and the things which do them."
+        },
+        {
+          Book: "VII",
+          Quote:
+            "Adorn thyself with simplicity and with indifference towards the things which lie between virtue and vice. Love mankind. Follow God. The poet says that Law rules all. And it is enough to remember that law rules all."
+        },
+        {
+          Book: "VII",
+          Quote:
+            "About fame... Just as the sand-dunes, heaped one upon another, hide each the first, so in life the former deeds are quickly hidden by those that follow after."
+        },
+        {
+          Book: "VII",
+          Quote:
+            "This is a fine saying of Plato: That he who is discoursing about men should look also at earthly things as if he viewed them from some higher place; should look at them... a mixture of all things and an orderly combination of contraries."
+        },
+        {
+          Book: "VIII",
+          Quote:
+            "On the occasion of every act ask thyself, How is this with respect to me? Shall I repent of it? A little time and I am dead, and all is gone."
+        },
+        {
+          Book: "VIII",
+          Quote: "You may break your heart, but men will still go on as before."
+        },
+        {
+          Book: "VIII",
+          Quote:
+            "Constantly and, if it be possible, on the occasion of every impression on the soul, apply to it the principles of Physic, of Ethic, and of Dialectic."
+        },
+        {
+          Book: "VIII",
+          Quote:
+            "To change your mind and to follow him who sets you right is to be nonetheless the free agent that you were before."
+        },
+        {
+          Book: "VIII",
+          Quote:
+            "Nature has had regard in everything no less to the end than to the beginning and the continuance, just like a man who throws up a ball. What good is it then for the ball to be thrown up, or harm for it to come down... what good is it to the bubble while it holds together, or what harm when it is burst?"
+        },
+        {
+          Book: "VIII",
+          Quote:
+            "Short-lived are both the praiser and the praised, and rememberer and the remembered: and all this in a nook of this part of the world; and not even here do all agree, no, not any one with himself: and the whole earth too is a point."
+        },
+        {
+          Book: "VIII",
+          Quote:
+            "Look to the essence of a thing, whether it be a point of doctrine, of practice, or of interpretation."
+        },
+        {
+          Book: "VIII",
+          Quote:
+            "Thou sufferest justly: for thou choosest rather to become good to-morrow than to be good to-day."
+        },
+        {
+          Book: "VIII",
+          Quote:
+            "Remember this, then, that this little compound, thyself, must either be dissolved, or thy poor breath must be extinguished, or be removed and placed elsewhere."
+        },
+        {
+          Book: "VIII",
+          Quote:
+            "There are three relations [between thee and other things]: the one to the body which surrounds thee; the second to the divine cause from which all things come to all; and the third to those who live with thee."
+        },
+        {
+          Book: "VIII",
+          Quote:
+            "Remember that neither the future nor the past pains thee, but only the present. But this is reduced to a very little, if thou only circumscribest it, and chidest thy mind, if it is unable to hold out against even this."
+        },
+        {
+          Book: "VIII",
+          Quote:
+            "The things... which are proper to the understanding no other man is used to impede, for neither fire, nor iron, nor tyrant, nor abuse, touches it in any way. When it has been made a sphere, it continues a sphere."
+        },
+        {
+          Book: "VIII",
+          Quote:
+            "It is not fit that I should give myself pain, for I have never intentionally given pain even to another."
+        },
+        {
+          Book: "VIII",
+          Quote:
+            "The mind which is free from passions is a citadel, for man has nothing more secure to which he can fly for refuge and for the future be inexpugnable. He then who has not seen this is an ignorant man: but he who has seen it and does not fly to this refuge is unhappy."
+        },
+        {
+          Book: "IX",
+          Quote:
+            "The nature of the universe is the nature of things that are. Now, things that are have kinship with things that are from the beginning. Further, this nature is styled Truth; and it is the first cause of all that is true."
+        },
+        {
+          Book: "IX",
+          Quote:
+            "He would be the finer gentleman that should leave the world without having tasted of lying or pretence of any sort, or of wantonness or conceit."
+        },
+        {
+          Book: "IX",
+          Quote:
+            "Think not disdainfully of death, but look on it with favor; for even death is one of the things that Nature wills."
+        },
+        {
+          Book: "IX",
+          Quote:
+            "A wrongdoer is often a man who has left something undone, not always one who has done something."
+        },
+        {
+          Book: "IX",
+          Quote:
+            "Blot out vain pomp; check impulse; quench appetite; keep reason under its own control."
+        },
+        {
+          Book: "IX",
+          Quote:
+            "Things that have a common quality ever quickly seek their kind."
+        },
+        {
+          Book: "IX",
+          Quote:
+            "All things are the same,—familiar in enterprise, momentary in endurance, coarse in substance. All things now are as they were in the day of those whom we have buried."
+        },
+        {
+          Book: "IX",
+          Quote:
+            "The happiness and unhappiness of the rational, social animal depends not on what he feels but on what he does; just as his virtue and vice consist not in feeling but in doing."
+        },
+        {
+          Book: "IX",
+          Quote:
+            "Turn thy thoughts now to the consideration of thy life, thy life as a child, as a youth, thy manhood, thy old age, for in these also every change was a death. Is this anything to fear?"
+        },
+        {
+          Book: "IX",
+          Quote:
+            "As thou thyself art a component part of a social system, so let every act of thine be a component part of social life. Whatever act of thine that has no reference, either immediately or remotely, to a social end, this tears asunder thy life, and does not allow it to be one, and it is of the nature of a mutiny, just as when in a popular assembly a man acting by himself stands apart from the general agreement."
+        },
+        {
+          Book: "IX",
+          Quote:
+            "The universal intelligence puts itself in motion for every separate effect... or it puts itself in motion once, and everything else comes by way of a sequence in a manner; or individual elements are the origin of all things. In a word, if there is a god, all is well; and if chance rules, do not thou be governed by it."
+        },
+        {
+          Book: "IX",
+          Quote:
+            "Let there be freedom from perturbations with respect to the things which come from the external cause; and let there be justice in the things done by virtue of the internal cause, that is, let there be movement and action terminating in this, in social acts, for this is according to thy nature."
+        },
+        {
+          Book: "IX",
+          Quote:
+            "Why dost thou not pray... to give thee the faculty of not fearing any of the things which thou fearest, or of not desiring any of the things which thou desirest, or not being pained at anything, rather than pray that any of these things should not happen or happen?"
+        },
+        {
+          Book: "IX",
+          Quote:
+            "Art thy not content that thou hast done something conformable to thy nature, and dost thou seek to be paid for it? Just as if the eye demanded recompense for seeing, or the feet for walking. For as these members are formed for a particular purpose... so also is man formed by nature to acts of benevolence."
+        },
+        {
+          Book: "X",
+          Quote:
+            "The whole contains nothing which is not or its advantage; and all natures indeed have this common principle, but the nature of the universe has this principle besides, that it cannot be compelled even by any external cause to generate anything harmful to itself."
+        },
+        {
+          Book: "X",
+          Quote:
+            "Whatever may happen to thee, it was prepared for thee from all eternity; and the implication of causes was from eternity spinning the thread of thy being, and of that which is incident to it."
+        },
+        {
+          Book: "X",
+          Quote:
+            "Rememberest the gods, and that they wish not to be flattered, but wish all reasonable beings to be made like themselves; and... rememberest that what does the work of a fig-tree is a fig-tree, and that what does the work of a dog is a dog, and that what does the work of a bee is a bee, and that what does the work of a man is a man."
+        },
+        {
+          Book: "X",
+          Quote:
+            "To her who gives and takes back all, to nature, the man who is instructed and modest says, Give what thou wilt; take back what thou wilt. And he says this not proudly, but obediently and well pleased with her."
+        },
+        {
+          Book: "X",
+          Quote:
+            "Live as on a mountain. ...Let men see, let them know a real man who lives according to nature. If they cannot endure him, let them kill him. For that is better than to live thus."
+        },
+        {
+          Book: "X",
+          Quote: "Waste no more time arguing what a good man should be. Be one."
+        },
+        {
+          Book: "X",
+          Quote:
+            "Constantly contemplate the whole of time and the whole of substance, and consider that all individual things as to substance are a grain of a fig, and as to time the turning of a gimlet."
+        },
+        {
+          Book: "X",
+          Quote:
+            "Look at everything that exists, and observe that it is already in dissolution and change, and as it were putrefaction or dispersion, or that everything is so constituted in nature as to die."
+        },
+        {
+          Book: "X",
+          Quote:
+            "Let this always be plain to thee, that this piece of land is like any other; and that all things here are the same with all things on the top of a mountain, or on the sea-shore, or wherever thou chooses to be. For thou wilt find just what Plato says, Dwelling within the walls of the city as in a shepherd's fold on a mountain."
+        },
+        {
+          Book: "X",
+          Quote:
+            "Only to the rational animal is it given to follow voluntarily what happens; but simply to follow is a necessity imposed on all."
+        },
+        {
+          Book: "X",
+          Quote:
+            "A little time, and thou shalt close thy eyes; and him who has attended thee to thy grave, another soon will lament."
+        },
+        {
+          Book: "X",
+          Quote:
+            "There is no man so fortunate that there shall not be by him when he is dying some who are pleased with what is going to happen."
+        },
+        {
+          Book: "X",
+          Quote:
+            "Remember that what pulls the strings is the force hidden within; there lies the power to persuade, there the life,—there, if one must speak out, the real man."
+        },
+        {
+          Book: "XI",
+          Quote:
+            "Have I done something for the general interest? Well then I have had my reward. Let this always be present to thy mind, and never stop doing such good."
+        },
+        {
+          Book: "XI",
+          Quote:
+            "There is no nature which is inferior to art, the arts imitate the nature of things."
+        },
+        {
+          Book: "XI",
+          Quote:
+            "The man who is honest and good ought to be exactly like a man who smells strong, so that the bystander as soon as he comes near him must smell whether he choose or not."
+        },
+        {
+          Book: "XI",
+          Quote: "And virtue they will curse, speaking harsh words."
+        },
+        {
+          Book: "XII",
+          Quote:
+            "If it is not right, do not do it, if it is not true, do not say it. For let thy efforts be —"
+        },
+        {
+          Book: "XII",
+          Quote:
+            "All those things at which thou wishest to arrive by a circuitous road, thou canst have now, if thou dost not refuse them to thyself."
+        },
+        {
+          Book: "XII",
+          Quote:
+            "Consider that everything is opinion, and opinion is in thy power. Take away then, when thou choosest, thy opinion, and like a mariner, who has doubled the promontory, thou wilt find calm, everything stable, and a waveless bay."
+        },
+        {
+          Book: "XII",
+          Quote:
+            "Know the joy of life by piling good deed on good deed until no rift or cranny appears between them."
+        },
+        {
+          Book: "XII",
+          Quote:
+            "Everything harmonizes with me, which is harmonious to thee, O Universe. Nothing for me is too early or too late, which is in due time for thee. There is one light of the sun, though it is interrupted by walls, mountains and infinite other things. There is one common substance, though it is distributed among countless bodies which have their several qualities. There is one soul, though it is distributed among several natures and individual limitations. There is one intelligent soul, though it seems to be divided."
+        },
+        {
+          Book: "XII",
+          Quote:
+            "Depart then satisfied, for he also who releases thee is satisfied."
+        },
+        {
+          Book: "II",
+          Quote:
+            "Find time still to be learning somewhat good, and give up being desultory."
+        },
+        {
+          Book: "IV",
+          Quote:
+            "Be not as one that hath ten thousand years to live; death is nigh at hand: while thou livest, while thou hast time, be good."
+        },
+        {
+          Book: "XI",
+          Quote:
+            "No form of Nature is inferior to Art; for the arts merely imitate natural forms."
+        },
+        {
+          Book: "V",
+          Quote:
+            "In the morning, when thou art sluggish at rousing thee, let this thought be present; “I am rising to a man’s work.”"
+        },
+        {
+          Book: "IX",
+          Quote:
+            "Everything is in a state of metamorphosis. Thou thyself art in everlasting change and in corruption to correspond; so is the whole universe."
+        }
+      ];
+    </script>
+  </body>
+</html>
