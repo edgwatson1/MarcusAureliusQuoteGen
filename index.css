@@ -3,7 +3,11 @@ html {
 }
 
 body {
-  padding: 15% 20% 20% 20%;
+  padding-top: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 10%;
+  overflow: hidden;
 }
 
 p {
